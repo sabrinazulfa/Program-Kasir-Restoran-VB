@@ -27,7 +27,6 @@ Partial Class Form2
         Me.btnHitung = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNama = New System.Windows.Forms.TextBox()
-        Me.txtMeja = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cmbMenuMakanan = New System.Windows.Forms.ComboBox()
@@ -77,6 +76,7 @@ Partial Class Form2
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.cmbMeja = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -124,15 +124,6 @@ Partial Class Form2
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(140, 27)
         Me.txtNama.TabIndex = 3
-        '
-        'txtMeja
-        '
-        Me.txtMeja.BackColor = System.Drawing.Color.Turquoise
-        Me.txtMeja.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtMeja.Location = New System.Drawing.Point(161, 104)
-        Me.txtMeja.Name = "txtMeja"
-        Me.txtMeja.Size = New System.Drawing.Size(140, 27)
-        Me.txtMeja.TabIndex = 4
         '
         'PictureBox1
         '
@@ -589,12 +580,23 @@ Partial Class Form2
         Me.CheckBox3.Text = "Save To Word"
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
+        'cmbMeja
+        '
+        Me.cmbMeja.AllowDrop = True
+        Me.cmbMeja.BackColor = System.Drawing.Color.Turquoise
+        Me.cmbMeja.FormattingEnabled = True
+        Me.cmbMeja.Location = New System.Drawing.Point(160, 104)
+        Me.cmbMeja.Name = "cmbMeja"
+        Me.cmbMeja.Size = New System.Drawing.Size(141, 28)
+        Me.cmbMeja.TabIndex = 57
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkTurquoise
         Me.ClientSize = New System.Drawing.Size(946, 544)
+        Me.Controls.Add(Me.cmbMeja)
         Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label16)
@@ -643,7 +645,6 @@ Partial Class Form2
         Me.Controls.Add(Me.cmbMenuMakanan)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.txtMeja)
         Me.Controls.Add(Me.txtNama)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnHitung)
@@ -670,7 +671,6 @@ Partial Class Form2
     Friend WithEvents btnHitung As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents txtNama As TextBox
-    Friend WithEvents txtMeja As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents cmbMenuMakanan As ComboBox
@@ -720,4 +720,5 @@ Partial Class Form2
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents cmbMeja As ComboBox
 End Class

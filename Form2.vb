@@ -10,8 +10,11 @@ Public Class Form2
         For a = 1 To 31
             cmbHari.Items.Add(a)
         Next
-        For c = 2023 To 2015 Step -1
-            cmbTahun.Items.Add(c)
+        For b = 2023 To 2015 Step -1
+            cmbTahun.Items.Add(b)
+        Next
+        For c = 1 To 25
+            cmbMeja.Items.Add(c)
         Next
     End Sub
 
@@ -75,7 +78,7 @@ Public Class Form2
         SabrinaCaffe.Visible = True
         SabrinaCaffe.Items.Add("SABRINA CAFFE")
         SabrinaCaffe.Items.Add("Nama Pembeli : " + txtNama.Text)
-        SabrinaCaffe.Items.Add("No Meja : " + txtMeja.Text)
+        SabrinaCaffe.Items.Add("No Meja : " + cmbMeja.Text)
         SabrinaCaffe.Items.Add("Tanggal : " + Label18.Text)
         SabrinaCaffe.Items.Add("Makanan : " + cmbMenuMakanan.SelectedItem)
         SabrinaCaffe.Items.Add("Jumlah Makanan : " + jmlhmknan.Text)
@@ -105,7 +108,7 @@ Public Class Form2
         Document.Bookmarks("tanggal").Select()
         App.Selection.TypeText(Label18.Text)
         Document.Bookmarks("meja").Select()
-        App.Selection.TypeText(txtMeja.Text)
+        App.Selection.TypeText(cmbMeja.Text)
         Document.Bookmarks("makanan").Select()
         App.Selection.TypeText(cmbMenuMakanan.Text)
         Document.Bookmarks("jumlahMakanan").Select()
