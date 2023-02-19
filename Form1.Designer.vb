@@ -24,9 +24,9 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnAboutUs = New System.Windows.Forms.Button()
+        Me.btnMainMenu = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,41 +39,41 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Button2
+        'btnAboutUs
         '
-        Me.Button2.Location = New System.Drawing.Point(37, 33)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "About Us"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnAboutUs.Location = New System.Drawing.Point(37, 33)
+        Me.btnAboutUs.Name = "btnAboutUs"
+        Me.btnAboutUs.Size = New System.Drawing.Size(94, 29)
+        Me.btnAboutUs.TabIndex = 1
+        Me.btnAboutUs.Text = "About Us"
+        Me.btnAboutUs.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnMainMenu
         '
-        Me.Button1.Location = New System.Drawing.Point(196, 33)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Main Menu"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnMainMenu.Location = New System.Drawing.Point(196, 33)
+        Me.btnMainMenu.Name = "btnMainMenu"
+        Me.btnMainMenu.Size = New System.Drawing.Size(94, 29)
+        Me.btnMainMenu.TabIndex = 2
+        Me.btnMainMenu.Text = "Main Menu"
+        Me.btnMainMenu.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnExit
         '
-        Me.Button3.Location = New System.Drawing.Point(349, 33)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(94, 29)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Exit"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(349, 33)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(94, 29)
+        Me.btnExit.TabIndex = 3
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(500, 450)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnMainMenu)
+        Me.Controls.Add(Me.btnAboutUs)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -83,7 +83,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnAboutUs As Button
+    Friend WithEvents btnMainMenu As Button
+    Friend WithEvents btnExit As Button
 End Class
